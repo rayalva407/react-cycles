@@ -5,10 +5,11 @@ import Form from './components/Form'
 function App() {
 
   const [inputDate, setInputDate] = useState('');
+  const [cycles, setCycles] = useState([]);
 
   return (
     <div className="App">
-      <Form setInputDate={setInputDate} />
+      <Form setInputDate={setInputDate} inputDate={inputDate} cycles={cycles} setCycles={setCycles} />
     </div>
   );
 }
